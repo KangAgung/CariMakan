@@ -1,0 +1,42 @@
+.btn {
+  border: $button-border;
+  border-radius: $button-radius;
+  display: inline-block;
+  height: $button-height;
+  line-height: $button-height;
+  padding: $button-padding;
+  text-transform: uppercase;
+  vertical-align: middle;
+  -webkit-tap-highlight-color: transparent;
+  text-decoration: none;
+  color: $button-raised-color;
+  background-color: $button-raised-background;
+  text-align: center;
+  letter-spacing: .5px;
+  @extend .z-depth-1;
+  transition: background-color .2s ease-out;
+  cursor: pointer;
+  font-size: $button-font-size;
+
+  &:hover {
+    background-color: $button-raised-background-hover;
+    @extend .z-depth-1-half;
+  }
+
+  &:focus {
+    background-color: darken($button-raised-background, 10%);
+  }
+}
+
+.fav-button {
+  position: fixed;
+  bottom: 2rem;
+  right: 1rem;
+  width: 4rem;
+  height: 4rem;
+  font-size: 1.5rem;
+  text-align: center;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+}

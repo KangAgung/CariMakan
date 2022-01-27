@@ -102,3 +102,9 @@ dist
 
 # TernJS port file
 .tern-port
+
+# e2e test fail output
+e2e/outputs/
+
+# jetbrains IDE
+.idea/
